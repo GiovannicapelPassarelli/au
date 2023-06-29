@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Peugeot 208-autocar</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .carro {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .carro h2 {
+      color: #333;
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .carro h3 {
+      color: #666;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .carro p {
+      margin-bottom: 5px;
+    }
+
+    .carro-img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .slick-prev,
+    .slick-next {
+      font-size: 40px;
+      color: #333;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #ff5722;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ff7043;
+    }
+  </style>
+  </head>
+  <body>
+    <div class="carro">
+        <h1>Marca:PEUGEOT</h1>
+        <h1>Modelo:208</h1>
+        <h1>Ano:2022/2022</h1>
+        <h1>Versão:Allure 1.6</h1>
+        <h1>Preço:R$78,900</h1>
+        <h1>Cor:Prata</h1>
+        <h1>Peugeot 208 Allure 2022 - Desempenho e Estilo em Perfeita Harmonia
+
+            Descrição: Descubra o Peugeot 208 Allure 2022, um carro que combina desempenho excepcional com um design arrojado e elegante. Este veículo compacto oferece uma experiência de condução envolvente e empolgante, repleta de recursos tecnológicos e conforto premium.
+            
+            Destaque-se na multidão com o design marcante do Peugeot 208 Allure 2022. Com linhas aerodinâmicas e detalhes sofisticados, ele transmite uma sensação de dinamismo e modernidade. A grade frontal elegante e os faróis em LED adicionam um toque de sofisticação, enquanto as rodas de liga leve completam o visual esportivo.
+            
+            No interior, você encontrará um espaço bem projetado, onde cada detalhe foi cuidadosamente pensado para oferecer conforto e conveniência. Os assentos revestidos em tecido premium proporcionam uma experiência de viagem agradável, enquanto o painel de instrumentos moderno e intuitivo coloca todas as informações essenciais ao seu alcance.
+            
+            O Peugeot 208 Allure 2022 não é apenas sobre estilo, mas também oferece um desempenho excepcional. Equipado com um motor potente e eficiente, você poderá desfrutar de uma condução ágil e responsiva em qualquer situação. A transmissão automática suave garante trocas de marcha precisas, enquanto os sistemas de assistência à direção proporcionam segurança e tranquilidade durante toda a jornada.
+            
+            Além disso, a tecnologia de última geração está presente no Peugeot 208 Allure 2022. O sistema de infotainment com tela sensível ao toque oferece conectividade perfeita com seu smartphone, permitindo que você acesse suas músicas, contatos e aplicativos favoritos com facilidade. Os recursos avançados de segurança, como frenagem de emergência e alerta de ponto cego, ajudam a proteger você e seus passageiros em todas as viagens.
+            
+            Não perca a oportunidade de ter o Peugeot 208 Allure 2022. Visite-nos agora mesmo e descubra todas as características e benefícios deste veículo incrível. Agende um test-drive e experimente a emoção de dirigir um carro que une desempenho e estilo em perfeita harmonia.
+            </h1>
+       <h1>Vendedor:Localiza seminovos São Miguel
+        Avenida Sao Miguel - 630 - Sao Paulo / SP</h1>
+        <h1>Telefone:0800 200 2000</h1>
+        <h1> Depois que Pagou,Me chama nesse numero: 11949839198</h1>
+        <a class="button" href="https://pay.kiwify.com.br/6bk9u6m">Não perca tempo! Compre agora e transforme seus desejos em realidade com apenas um clique!</a>
+        <div class="carro-carousel">
+          <div><img class="carro-img" src="https://localizaseminovos.vtexassets.com/arquivos/ids/70243845-800-auto?width=800&height=auto&aspect=true" alt="Imagem 1"></div>
+          <div><img class="carro-img" src="https://localizaseminovos.vtexassets.com/arquivos/ids/70243855-800-auto?width=800&height=auto&aspect=true" alt="Imagem 2"></div>
+          <div><img class="carro-img" src="https://localizaseminovos.vtexassets.com/arquivos/ids/70243850-800-auto?width=800&height=auto&aspect=true" alt="Imagem 3"></div>
+        </div>
+      </div>
+    
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('.carro-carousel').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: '<button type="button" class="slick-prev">←</button>',
+            nextArrow: '<button type="button" class="slick-next">→</button>'
+          });
+        });
+      </script>
+    </body>
+    </html>
+    
+
+    </div>
+  </body>
+</html>

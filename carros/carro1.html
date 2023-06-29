@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JEEP Compass</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <style>
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .carro {
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .carro h2 {
+      color: #333;
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    .carro h3 {
+      color: #666;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .carro p {
+      margin-bottom: 5px;
+    }
+
+    .carro-img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .slick-prev,
+    .slick-next {
+      font-size: 40px;
+      color: #333;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #ff5722;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #ff7043;
+    }
+  </style>
+</head>
+<body>
+  <div class="carro">
+    <h2>Marca: JEEP</h2>
+    <h3>Modelo: COMPASS</h3>
+    <h2>Ano: 2017/2018</h2>
+    <p>Preço: R$ 119.900,00</p>
+    <p>Quilometragem: 73.200km</p>
+    <p>Cor: Prata</p>
+    <p>Descrição: Jeep Compass 2017/2018</p>
+    <p>
+      Se você está procurando um SUV de alta qualidade, o Jeep Compass 2017/2018 é uma excelente opção. Com apenas 73.000km e em bom estado de conservação, este modelo na cor prata é uma escolha elegante e confiável.
+    </p>
+    <p>
+      O Jeep Compass é conhecido por sua durabilidade, conforto e desempenho excepcionais. Com sua ampla gama de recursos avançados de segurança e tecnologia, você pode ter certeza de que está dirigindo um veículo moderno e seguro.
+    </p>
+    <p>
+      Este modelo em particular vem com um motor potente e eficiente em termos de combustível, permitindo que você desfrute de uma condução suave e econômica. Além disso, o interior espaçoso e confortável é perfeito para viagens longas ou passeios em família.
+    </p>
+    <p>
+      Não perca a oportunidade de possuir um Jeep Compass 2017/2018 em excelente condição. Agende um test drive hoje mesmo e experimente tudo o que este SUV tem a oferecer!
+    </p>
+    <h1>Vendedor: Center BH Belo Horizonte, MG</h1>
+    <h2>Telefone: (31) 4042-4585</h2>
+    <a class="button" href="">Não perca tempo! Compre agora e transforme seus desejos em realidade com apenas um clique!</a>
+    <div class="carro-carousel">
+      <div><img class="carro-img" src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230616/jeep-compass-2.0-16v-diesel-longitude-4x4-automatico-wmimagem1648021011.jpg?s=fill&w=1920&h=1440&q=75" alt="Imagem 1"></div>
+      <div><img class="carro-img" src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230616/jeep-compass-2.0-16v-diesel-longitude-4x4-automatico-wmimagem16480965529.jpg?s=fill&w=1920&h=1440&q=75" alt="Imagem 2"></div>
+      <div><img class="carro-img" src="https://image.webmotors.com.br/_fotos/anunciousados/gigante/2023/202306/20230616/jeep-compass-2.0-16v-diesel-longitude-4x4-automatico-wmimagem16481801976.jpg?s=fill&w=1920&h=1440&q=75" alt="Imagem 3"></div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.carro-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="slick-prev">←</button>',
+        nextArrow: '<button type="button" class="slick-next">→</button>'
+      });
+    });
+  </script>
+</body>
+</html>
